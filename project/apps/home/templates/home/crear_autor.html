@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block Contenido%}
+    <h1>
+        Agregar Autor ingrese nombre y edad 
+    </h1>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Crear Autor">
+
+    </form>
+
+{% endblock Contenido%}
